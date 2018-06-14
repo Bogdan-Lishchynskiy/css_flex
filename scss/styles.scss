@@ -4,7 +4,11 @@ body {
     margin: 0;
     padding: 0;
 }
-
+.item_menu:hover{
+    font-size:20px;
+    transition: all 400ms;
+    font-size-adjust: 20px;
+}
 .wrapper {
     margin: 0 auto;
     max-width: 1000px;
@@ -12,81 +16,86 @@ body {
     overflow-x: hidden;
     overflow-y: hidden;
 }
-    header {
-        display: flex;
-        background-color: $green;
-        height: 10%;
-        border: $grey_border;
-        .text {
-            align-self: center;
-            padding-left: 10px;
-        }
+
+header {
+    display: flex;
+    background-color: $green;
+    height: 10%;
+    border: $grey_border;
+    .text {
+        align-self: center;
+        padding-left: 10px;
     }
+}
+
+main {
+    display: flex;
+    height: 80%;
+}
+
+.main_content {
+    background-color: $yellow;
+    width: 80%;
+    padding-left: 10px;
+    border: $grey_border;
+    padding-top: 5px;
+}
+
+.aside_nav {
+    background-color: $blue;
+    width: 20%;
+    border: $grey_border;
+}
+
+.navigation_item {
+    border-bottom: 1.4px solid grey;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    .text {
+        align-self: center;
+        padding-left: 10px;
+    }
+}
+
+.menu_item {
+    padding-top: 10px;
+    .text {
+        align-self: center;
+        padding-left: 10px;
+    }
+}
+
+footer {
+    display: flex;
+    background-color: $grey;
+    height: 10%;
+    border: $grey_border;
+    .text {
+        align-self: center;
+        padding-left: 10px;
+    }
+}
+
+@include below(600px) {
     main {
+        width: 100%;
         display: flex;
-        height: 80%;
+        flex-direction: column-reverse;
     }
     .main_content {
-        background-color: $yellow;
-        width: 80%;
-        padding-left: 10px;
-        border: $grey_border;
-        padding-top: 5px;
+        width: 100%;
+        height: 70%;
     }
-    .aside {
-        background-color: $blue;
-        width: 20%;
-        border: $grey_border;
-    }
-    .navigation_item {
-        border-bottom: 1.4px solid grey;
-        padding-top: 5px;
-        padding-bottom: 10px;
-        padding-left: 5px;
-        // width: 100%;
-        // height: 15%;
-    }
-    .menu_item {
-        padding-top: 10px;
-        padding-left: 5px;
-        // width: 100%;
-        // height: 80%;
-    }
-    footer {
-        display: flex;
-        background-color: $grey;
-        height: 10%;
-        border: $grey_border;
-        .text {
-            align-self: center;
-            padding-left: 10px;
-        }
-    }
-    @include below(600px) {
-       
-        main {
-            width: 100%;
+    .aside_nav {
+        width: 100%;
+        height: 30%;
+        .menu_item {
             display: flex;
-            flex-direction: column-reverse;
         }
-        .main_content {
-           width: 100%;
-           height: 70%;
-        }
-        .aside {
-            width: 100%;
-            height: 30%;
-            .menu_item{
-                display: flex;
-            }
-                .item_menu{
-                    color:orange;
-                    justify-content: space-around;
-                }
+        .item_menu {
+            color: orange;
+            justify-content: space-around;
 
-            
         }
-        
     }
-
-
+}
