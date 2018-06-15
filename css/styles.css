@@ -76,9 +76,7 @@ footer {
     width: 100%;
     height: 30%; }
     .aside_nav .menu_item {
-      display: flex; }
-    .aside_nav .item_menu {
-      color: orange;
+      display: flex;
       justify-content: space-around; } }
 
 /*# sourceMappingURL=styles.css.map */

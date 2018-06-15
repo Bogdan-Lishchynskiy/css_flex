@@ -1,5 +1,5 @@
-@import "../node_modules/rupture-sass/rupture";
-@import "variables";
+@import '../node_modules/rupture-sass/rupture';
+@import 'variables';
 body {
     margin: 0;
     padding: 0;
@@ -16,37 +16,32 @@ body {
     overflow-x: hidden;
     overflow-y: hidden;
 }
-
 header {
     display: flex;
     background-color: $green;
     height: 10%;
-    border: $grey_border;
+    border: $gray_border;
     .text {
         align-self: center;
         padding-left: 10px;
     }
 }
-
 main {
     display: flex;
     height: 80%;
 }
-
 .main_content {
     background-color: $yellow;
     width: 80%;
     padding-left: 10px;
-    border: $grey_border;
+    border: $gray_border;
     padding-top: 5px;
 }
-
 .aside_nav {
     background-color: $blue;
     width: 20%;
-    border: $grey_border;
+    border: $gray_border;
 }
-
 .navigation_item {
     border-bottom: 1.4px solid grey;
     padding-top: 5px;
@@ -56,7 +51,6 @@ main {
         padding-left: 10px;
     }
 }
-
 .menu_item {
     padding-top: 10px;
     .text {
@@ -64,12 +58,11 @@ main {
         padding-left: 10px;
     }
 }
-
 footer {
     display: flex;
-    background-color: $grey;
+    background-color: $gray;
     height: 10%;
-    border: $grey_border;
+    border: $gray_border;
     .text {
         align-self: center;
         padding-left: 10px;
@@ -91,11 +84,7 @@ footer {
         height: 30%;
         .menu_item {
             display: flex;
-        }
-        .item_menu {
-            color: orange;
             justify-content: space-around;
-
         }
     }
 }
