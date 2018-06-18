@@ -3,9 +3,11 @@ body {
   padding: 0;
   font-family: 'Roboto', sans-serif; }
 
-.item_menu:hover {
-  font-size: 20px;
-  transition: all 600ms; }
+li {
+  list-style-type: none; }
+
+.menu_item:hover {
+  transform: scale(1.5); }
 
 .wrapper {
   margin: 0 auto;
@@ -47,9 +49,9 @@ main {
     align-self: center;
     padding-left: 10px; }
 
-.menu_item {
+.menu {
   padding-top: 10px; }
-  .menu_item .text {
+  .menu .text {
     align-self: center;
     padding-left: 10px; }
 
@@ -75,10 +77,10 @@ footer {
   .aside_nav {
     width: 100%;
     height: 30%; }
-    .aside_nav .menu_item {
+    .aside_nav .menu {
       display: flex;
       justify-content: space-around; }
-      .aside_nav .menu_item .text {
+      .aside_nav .menu .text {
         padding-left: 0; } }
 
 /*# sourceMappingURL=styles.css.map */
